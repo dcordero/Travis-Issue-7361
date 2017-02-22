@@ -1,0 +1,16 @@
+language: objective-c
+osx_image: xcode8.2
+before_install:
+  - gem install fastlane --no-rdoc --no-ri --no-document --quiet
+install: true
+script:
+  - echo -e "*******************************************\n`fastlane --version`\n*******************************************"
+before_deploy:
+  - gem install fastlane --no-rdoc --no-ri --no-document --quiet
+deploy:
+  skip_cleanup: true
+  provider: script
+  script:
+    - echo -e "*******************************************\n`fastlane --version`\n*******************************************"
+  on:
+    branch: master
