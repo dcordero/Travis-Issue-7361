@@ -5,7 +5,11 @@ Project created to document the issue [#7361](https://github.com/travis-ci/travi
 # Description
 
 This simple project with just a very simple travis configuration shows how the version of fastlane is outdated in
-the deploy step even though it is updated before_deploy
+the deploy step even though it is updated before_deploy.
+
+[Here](https://github.com/dcordero/Travis-Issue-7361/blame/master/README.md#L777) you can see that `fastlane --version` shows `fastlane 2.18.1` after executing `script`. Which is correct.
+
+[Here](https://github.com/dcordero/Travis-Issue-7361/blame/master/README.md#L800) you can see that `fastlane --version` shows `fastlane 1.111.0` even though it was updated [here](https://github.com/dcordero/Travis-Issue-7361/blame/master/README.md#L781)
 
 - The failing job can be found here: https://travis-ci.org/dcordero/Travis-Issue-7361/builds/204203405
 
