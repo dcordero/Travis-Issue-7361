@@ -1,6 +1,7 @@
 language: objective-c
 osx_image: xcode8.2
 before_install:
+  - gem update --system
   - gem install fastlane --no-rdoc --no-ri --no-document --quiet
 install: true
 script:
