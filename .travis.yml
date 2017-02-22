@@ -4,13 +4,13 @@ before_install:
   - gem install fastlane --no-rdoc --no-ri --no-document --quiet
 install: true
 script:
-  - echo -e "*******************************************\n`fastlane --version`\n*******************************************"
+  - fastlane --version
 before_deploy:
   - gem install fastlane --no-rdoc --no-ri --no-document --quiet
 deploy:
   skip_cleanup: true
   provider: script
   script:
-    - echo -e "*******************************************\n`fastlane --version`\n*******************************************"
+    - fastlane --version
   on:
     branch: master
