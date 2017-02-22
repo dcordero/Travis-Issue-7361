@@ -7,7 +7,7 @@ install: true
 script:
   - fastlane --version
 before_deploy:
-  - gem install fastlane --no-rdoc --no-ri --no-document --quiet
+  - gem update fastlane
 deploy:
   skip_cleanup: true
   provider: script
